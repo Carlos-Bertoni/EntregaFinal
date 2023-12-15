@@ -1,303 +1,303 @@
 /** Defino estilos globales **/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*a {
-    text-decoration: none;
+  text-decoration: none;
 }*/
 
 /** Defino tipografías y tamaños **/
 
 h1 {
-    font-family: 'REM', sans-serif;
-    color: rgb(251, 251, 251);
-    font-size: 4rem;
-    font-weight: 700;
-    text-align: center;
-    justify-content: center;
+  font-family: 'REM', sans-serif;
+  color: rgb(251, 251, 251);
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
 }
 
 h2 {
-    font-family: 'REM', sans-serif;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2rem;
+  font-family: 'REM', sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
 
 }
 
 p {
-    font-family: 'Nunito', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    width: 70%;
-    text-align: center;
-    vertical-align: middle;
+  font-family: 'Nunito', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  width: 70%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 
 .header {
-    background-color: rgb(194, 224, 250);
-    position: fixed;
-    width: 100%;
-    min-height: 80px;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
+  background-color: rgb(194, 224, 250);
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    margin: 0 auto;
-    
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  
 }
 
 .nav-menu {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  overflow: hidden;
 }
 
 .nav-link a {
-    font-family: 'REM', sans-serif;
-    font-size: 0,5rem;
-    font-weight: 300;
-    color: rgb(45, 45, 254);
-    text-decoration: none;
-    list-style: none;
+  font-family: 'REM', sans-serif;
+  font-size: 0,5rem;
+  font-weight: 300;
+  color: rgb(45, 45, 254);
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav-link a:hover {
-    color: rgb(27, 12, 125);
-    font-weight: 700;
-    transition: 0.5s;
+  color: rgb(27, 12, 125);
+  font-weight: 700;
+  transition: 0.5s;
 }
 
 .logo {
-    height: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 main {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 
 #vinculo-externo {
-    text-decoration: none;
-    font-family: 'REM', sans-serif;
-    font-weight: 700;
-    color: rgb(9, 17, 133);
-    font-size: 1rem;
-    text-align: center;
-    background-color: rgba(80, 238, 255, 0.803);
-    padding: 20px;
-    margin-bottom: 2rem;
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
+  font-weight: 700;
+  color: rgb(9, 17, 133);
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgba(80, 238, 255, 0.803);
+  padding: 20px;
+  margin-bottom: 2rem;
 }
 
 /* Contenedor Imagen de Fondo y Título de cada página */
 .contenedor-hero-image {
-    position: relative;
-    /*height: 100vh;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  /*height: 100vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Texto en el medio de la imagen de fondo */
 .titulo-centrado {
-    font-family: 'REM', sans-serif;
-    font-size: 3.5rem;
-    color: rgb(255, 255, 255);
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
+  font-family: 'REM', sans-serif;
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Imagen de fondo */
 .hero-image {
-    width: 100%;
-    height: 100%;
-    /*object-fit: cover;*/
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
 }
 
 /* Imágenes de cada sección */
 .destacados {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 40%;
-    width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 40%;
+  width: 45%;
 }
 
 .video {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .maps {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
 /* Formulario de Contacto */
 .form-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
 /*  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 8px;
-  }
-  
-  input,
-  textarea {
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }*/
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}*/
 
 .cards-container {
-    background-color: rgb(63, 55, 208);
-    display: flex;
-    justify-content: space-around;
-    gap: 1.0rem;
-    align-items: center; /* Centrado vertical */
-    flex-wrap: wrap;
-    padding: 30px;
-    margin-bottom: 20px;
+  background-color: rgb(63, 55, 208);
+  display: flex;
+  justify-content: space-around;
+  gap: 1.0rem;
+  align-items: center; /* Centrado vertical */
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
 .card-text {
-    text-align: left;
+  text-align: left;
 }
 
 /* FIN Formulario de Contacto */
 
 #ciudades {
-    text-decoration: none;
-    font-family: 'REM', sans-serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
 }
 
 .ciudades-contenedor {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
-    background-color: rgb(205, 229, 237);
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  background-color: rgb(205, 229, 237);
 
 }
-  
+
 .foto img {
-    width: 80%;
-    padding: 20px
-    
-}
+  width: 80%;
+  padding: 20px
   
+}
+
 .texto {
-    text-align: left;
-    padding: 20px 20px
+  text-align: left;
+  padding: 20px 20px
 }
-  
+
 
 .centrar-lista {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 .centrar-lista ol {
-    display: inline-block;
-    text-align: left;
+  display: inline-block;
+  text-align: left;
 }
 
 .parrafo-centrado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .parrafo-justificado {
-    display: flex;
-    text-align: justify;
-    padding: 2rem;
+  display: flex;
+  text-align: justify;
+  padding: 2rem;
 }
 
 .parrafo-back {
-    background-color: rgb(223, 223, 240);
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  background-color: rgb(223, 223, 240);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
 }
 
 /* Estilos del chat de WhatsApp */
 .whatsapp-chat {
-    background-color: rgba(255, 240, 245, 0.7);
-    width: 5rem;
-    height: 5rem;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 50%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  background-color: rgba(255, 240, 245, 0.7);
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Ajustando el tamaño del logo */
-  .whatsapp-chat img {
-    width: 3rem; 
-    height: 3rem;
-  }
+.whatsapp-chat img {
+  width: 3rem; 
+  height: 3rem;
+}
 
 .mensaje-footer {
-    font-family: 'REM', sans-serif;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 1.2rem;
+  font-family: 'REM', sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1.2rem;
 }
 
 /** FOOTER **/
 .zocalo {
-    background-color: rgb(64, 207, 250);
-    display: flex;
-    justify-content: center;
-    height: 4.5rem;
-    width: 100%;
+  background-color: rgb(64, 207, 250);
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+  width: 100%;
 }
