@@ -1,0 +1,49 @@
+.header {
+    background-color: rgb(194, 224, 250);
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    /* MENU de NAVEGACION */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 100%;
+            margin: 0 auto;
+    
+            .nav-menu {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 30px;
+                overflow: hidden;
+                align-items: center;
+    
+                .nav-link a {
+                    font-family: 'REM', sans-serif;
+                    font-size: 0, 5rem;
+                    font-weight: 300;
+                    color: rgb(45, 45, 254);
+                    text-decoration: none;
+                    list-style: none;
+    
+                    &:hover {
+                        color: rgb(27, 12, 125);
+                        font-weight: 700;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    
+    
+        .logo {
+            height: 40px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+
+}

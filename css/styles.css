@@ -9,6 +9,67 @@
 /*a {
   text-decoration: none;
 }*/
+/** IMPORTO ESTILOS HEADER **/
+.header {
+  background-color: rgb(194, 224, 250);
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  /* MENU de NAVEGACION */
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header .nav .nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  overflow: hidden;
+  align-items: center;
+}
+.header .nav .nav-menu .nav-link a {
+  font-family: "REM", sans-serif;
+  font-size: 0, 5rem;
+  font-weight: 300;
+  color: rgb(45, 45, 254);
+  text-decoration: none;
+  list-style: none;
+}
+.header .nav .nav-menu .nav-link a:hover {
+  color: rgb(27, 12, 125);
+  font-weight: 700;
+  transition: 0.5s;
+}
+.header .logo {
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+/** IMPORTO ESTILOS FOOTER **/
+/** FOOTER **/
+.zocalo {
+  background-color: rgb(64, 207, 250);
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+  width: 100%;
+}
+.zocalo .mensaje-footer {
+  font-family: "REM", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
 /** Defino tipografías y tamaños **/
 h1 {
   font-family: "REM", sans-serif;
@@ -37,6 +98,7 @@ p {
   vertical-align: middle;
 }
 
+/** Paso .header a Components
 .header {
   background-color: rgb(194, 224, 250);
   position: fixed;
@@ -45,36 +107,37 @@ p {
   top: 0px;
   left: 0px;
   z-index: 1;
-}
-
-/* MENU de NAVEGACION */
+} **/
+/** MENU de NAVEGACION 
 .nav {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
   margin: 0 auto;
-}
-.nav .nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 30px;
-  overflow: hidden;
-  align-items: center;
-}
-.nav .nav-menu .nav-link a {
-  font-family: "REM", sans-serif;
-  font-size: 0, 5rem;
-  font-weight: 300;
-  color: rgb(45, 45, 254);
-  text-decoration: none;
-  list-style: none;
-}
-.nav .nav-menu .nav-link a:hover {
-  color: rgb(27, 12, 125);
-  font-weight: 700;
-  transition: 0.5s;
-}
 
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    overflow: hidden;
+    align-items: center;
+
+    .nav-link a {
+      font-family: 'REM', sans-serif;
+      font-size: 0,5rem;
+      font-weight: 300;
+      color: rgb(45, 45, 254);
+      text-decoration: none;
+      list-style: none;
+
+      &:hover {
+          color: rgb(27, 12, 125);
+          font-weight: 700;
+          transition: 0.5s;
+      }
+    }
+  }
+} **/
 .logo {
   height: 40px;
   margin-left: 40px;
@@ -255,21 +318,23 @@ main {
   height: 3rem;
 }
 
-/** FOOTER **/
-.zocalo {
-  background-color: rgb(64, 207, 250);
-  display: flex;
-  justify-content: center;
-  height: 4.5rem;
-  width: 100%;
-}
-.zocalo .mensaje-footer {
-  font-family: "REM", sans-serif;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 1.2rem;
-}
+/** FOOTER 
+  .zocalo {
+    background-color: rgb(64, 207, 250);
+    display: flex;
+    justify-content: center;
+    height: 4.5rem;
+    width: 100%;
+
+    .mensaje-footer {
+        font-family: 'REM', sans-serif;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+
+} **/
 
 /*# sourceMappingURL=styles.css.map */

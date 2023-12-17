@@ -10,6 +10,13 @@
     text-decoration: none;
   }*/
   
+  /** IMPORTO ESTILOS HEADER **/
+  @import "./components/header";
+
+  /** IMPORTO ESTILOS FOOTER **/
+  @import "./components/footer";
+
+  
   /** Defino tipografías y tamaños **/
   
   h1 {
@@ -19,6 +26,7 @@
     font-weight: 700;
     text-align: center;
     justify-content: center;
+
   }
   
   h2 {
@@ -40,7 +48,7 @@
     vertical-align: middle;
   }
   
-  
+  /** Paso .header a Components
   .header {
     background-color: rgb(194, 224, 250);
     position: fixed;
@@ -49,9 +57,9 @@
     top: 0px;
     left: 0px;
     z-index: 1;
-  }
+  } **/
   
-  /* MENU de NAVEGACION */
+  /** MENU de NAVEGACION 
   .nav {
     display: flex;
     justify-content: space-between;
@@ -80,7 +88,7 @@
         }
       }
     }
-  }
+  } **/
 
 
   .logo {
@@ -271,7 +279,7 @@
   }
   
 
-  /** FOOTER **/
+  /** FOOTER 
   .zocalo {
     background-color: rgb(64, 207, 250);
     display: flex;
@@ -288,4 +296,4 @@
         margin-top: 1.2rem;
     }
 
-}
+} **/
