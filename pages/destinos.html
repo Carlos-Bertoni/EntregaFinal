@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <!-- Compatibilidad con los navegadores más antiguos -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinos destacados</title>
-    
+
     <!-- Vinculo archivo de ESTILOS -->
-    <link rel="stylesheet" href="../css/styles.css">
-    
+    <link rel="stylesheet" href="../css/styles.css" />
 
     <!-- TIPOGRAFÍAS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=REM:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=REM:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Inicio Bootstrap -->
     <link
@@ -25,149 +27,159 @@
       crossorigin="anonymous"
     />
     <!-- Fin Bootstrap (Importante: Script de BOOTSTRAP está agregado en la última línea del body) -->
+  </head>
 
-</head>
+  <body class="body">
+    <!-- Inicio Sección Header -->
 
-    <body class="body">
+    <header class="header">
+      <!-- MENU -->
+      <nav class="nav">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../images/d-traveling_logo.png"
+            alt="D Traveling Logo"
+          />
+        </a>
 
-        <!-- Inicio Sección Header -->
-    
-        <header class="header">
+        <ul class="nav-menu">
+          <li class="nav-link"><a href="../index.html">Home</a></li>
+          <li class="nav-link"><a href="destinos.html">Destinos</a></li>
+          <li class="nav-link"><a href="ofertas.html">Ofertas</a></li>
+          <li class="nav-link"><a href="tips.html">Tips</a></li>
+          <li class="nav-link"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            <!-- MENU -->
-            <nav class="nav">
-                <a href="../index.html">
-                    <img class="logo" src="../images/d-traveling_logo.png" alt="D Traveling Logo">
-                </a>    
-  
-                <ul class="nav-menu">
-                <li class="nav-link"><a href="../index.html">Home</a></li>
-                <li class="nav-link"><a href="destinos.html">Destinos</a>
-                </li>
-                <li class="nav-link"><a href="ofertas.html">Ofertas</a></li>
-                <li class="nav-link"><a href="tips.html">Tips</a></li>
-                <li class="nav-link"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-  
-        </header>
-      
-        <!-- Fin Sección Header -->
+    <!-- Fin Sección Header -->
 
-        <main class="main">
-    
-            <!-- Título principal con imagen de fondo -->
-      
-            <div class="contenedor-hero-image">
-                <div class="titulo-centrado">
-                    <h1>Destinos destacados</h1>
-                </div>
-                    <img class="hero-image" src="../images/villa-la-angostura.jpg" alt="Verano en Villa la Angostura">
-            </div>
-        
-            <div class="parrafo-centrado">
-                <p id="parrafo-destinos">En esta sección te mostramos algunos de los lugares más increíbles que puedes visitar con nosotros. Desde las playas paradisíacas de Maldivas hasta las montañas nevadas de Suiza, pasando por las ciudades más cosmopolitas como Nueva York o París. Te ofrecemos una variedad de opciones para todos los gustos y presupuestos.</p>
-            </div>
-        
+    <main class="main">
+      <!-- Título principal con imagen de fondo -->
 
-            <div>
-                <h2>ROMA</h2>
-                <img class="destacados" src="../images/coliseo-roma.jpg" alt="Coliseo de Roma">
-            </div>
-            
-            <div>
-                <h2>Top 10 para visitar Suiza
-                </h2>
-                    <div id="vinculo-externo">
-                        <a class="vinculo-externo" href="https://www.autopista.es/planeta2030/suiza-diez-lugares-no-hay-perderse_260591_102.html" target="_blank">Mirá el video de los diez lugares que no te podés perder en Suiza</a>
-                    </div>
-            </div>
-                
-            <!-- Vínculo a video de Youtube -->
-            <div class="video">    
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4bYC5KraqGU?si=ictlB03Y2bUczEWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+      <div class="contenedor-hero-image">
+        <div class="titulo-centrado">
+          <h1>Destinos destacados</h1>
+        </div>
+        <img
+          class="hero-image"
+          src="../images/villa-la-angostura.jpg"
+          alt="Verano en Villa la Angostura"
+        />
+      </div>
 
-            <div>
-                <h2>Las 10 <a href="#ciudades">ciudades</a> más bonitas del mundo que deberías visitar al menos una vez en la vida</h2>
-            </div>
-            
-            <!-- GRID -->                
-            
-            <div class="ciudades-contenedor">
-                <div class="foto">
-                    <img src="../images/argentina-obelisco.jpg" alt="Ciudad de Buenos Aires">
-                </div>
-                <div class="texto">
-                    ¿Sabías que hay más de 500 ciudades con más de un millón de habitantes en todo el mundo? Cada ciudad tiene su propio encanto y no es fácil elegir cuál podría ser la más bonita. Pero diversas encuestas y estudios han llegado a cierto consenso. La empresa de viajes Kuoni, por ejemplo, ha evaluado las entradas de TripAdvisor y la firma Online Mortgage Advisor ha hecho lo propio siguiendo su propio método. Los analistas examinaron las ciudades según el principio de la proporción áurea, que puede medirse con precisión y que la gente percibe como especialmente armoniosa. La editorial de guías de viajes Rough Guide lo hizo más fácil y simplemente hizo una encuesta a través de Facebook. Una aportación igualmente interesante es la clasificación de la Economist Intelligence Unit (EIU), que determina cuáles son las ciudades más habitables del mundo. Nosotros hemos hecho un resumen de todo ello y el resultado te sorprenderá.
-                </div>
-            </div>
-            
-                
-            <!-- BORRADOR PÁRRAFO    
-                <p class="parrafo-justificado">
-                    ¿Sabías que hay más de 500 ciudades con más de un millón de habitantes en todo el mundo? Cada ciudad tiene su propio encanto y no es fácil elegir cuál podría ser la más bonita. Pero diversas encuestas y estudios han llegado a cierto consenso. La empresa de viajes Kuoni, por ejemplo, ha evaluado las entradas de TripAdvisor y la firma Online Mortgage Advisor ha hecho lo propio siguiendo su propio método. Los analistas examinaron las ciudades según el principio de la proporción áurea, que puede medirse con precisión y que la gente percibe como especialmente armoniosa. La editorial de guías de viajes Rough Guide lo hizo más fácil y simplemente hizo una encuesta a través de Facebook. Una aportación igualmente interesante es la clasificación de la Economist Intelligence Unit (EIU), que determina cuáles son las ciudades más habitables del mundo. Nosotros hemos hecho un resumen de todo ello y el resultado te sorprenderá.
-            
-                    Según un reporte realizado por The Economic Intelligence Unit -durante el mismo año- para 2030, más de 60% de la población global vivirá en ciudades. La tasa de crecimiento es particularmente rápida en muchas de las llamadas megalópolis, es decir, urbes cuya población es mayor a 10 millones de habitantes.
+      <div class="parrafo-centrado">
+        <p id="parrafo-destinos">
+          En esta sección te mostramos algunos de los lugares más increíbles que
+          puedes visitar con nosotros. Desde las playas paradisíacas de Maldivas
+          hasta las montañas nevadas de Suiza, pasando por las ciudades más
+          cosmopolitas como Nueva York o París. Te ofrecemos una variedad de
+          opciones para todos los gustos y presupuestos.
+        </p>
+      </div>
 
-                    Al mismo tiempo, un censo realizado por la ONU indica que la concentración poblacional en estas mega ciudades ronda los 300 millones de habitantes, y cada vez son más los motores de crecimiento de sus respectivas economías nacionales; por lo que al tiempo en que las economías crecen, también lo hacen sus desafíos.
+      <div>
+        <h2>ROMA</h2>
+        <img
+          class="destacados"
+          src="../images/coliseo-roma.jpg"
+          alt="Coliseo de Roma"
+        />
+      </div>
 
-                    El paradigma del bienestar económico y social derivado de las ciudades, comienza a ser un mito ante la creciente explosión demográfica, misma que ha llevado a pique -en diversos casos-, el nivel y la calidad de vida de sus habitantes, rompiendo así con su premisa fundamental, pues la viabilidad de una ciudad tiene base en un funcionamiento eficaz de su infraestructura, lo que se traduce en suficiencia en servicios de energía, transporte, seguridad y movilidad; calidad de aire y condición ambiental; servicios hospitalarios y de salud, suministro de agua y presupuestos acordes con el nivel de ingreso promedio de la gente, una situación que necesariamente está vinculada al empleo que la ciudad en turno sea capaz de ofrecer.
+      <div>
+        <h2>Top 10 para visitar Suiza</h2>
+        <div id="vinculo-externo">
+          <a
+            class="vinculo-externo"
+            href="https://www.autopista.es/planeta2030/suiza-diez-lugares-no-hay-perderse_260591_102.html"
+            target="_blank"
+            >Mirá el video de los diez lugares que no te podés perder en
+            Suiza</a
+          >
+        </div>
+      </div>
 
-                    En otras palabras, lograr calidad de vida en una ciudad, requiere fundamentalmente de infraestructura, pues una infraestructura eficaz, contribuye a la prosperidad económica y a la mejora de la calidad de vida de sus habitantes.
-                    </p>  -->
-                
-            </section>
+      <!-- Vínculo a video de Youtube -->
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/4bYC5KraqGU?si=ictlB03Y2bUczEWn"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-            
-            <!-- LISTADO DE BOOTSTRAP (No lo utilicé) -->
-            <!-- <div class="listado-ciudades">
-                <ol class="list-group list-group-numbered style="width: 20rem;">
-                    <li class="list-group-item"">Roma</li>
-                    <li class="list-group-item">París</li>
-                    <li class="list-group-item">Praga</li>
-                    <li class="list-group-item">Londres</li>
-                    <li class="list-group-item">Venecia</li>
-                    <li class="list-group-item">Sidney</li>
-                    <li class="list-group-item">Nueva York</li>
-                    <li class="list-group-item">Barcelona</li>
-                    <li class="list-group-item">Vancouver</li>
-                    <li class="list-group-item">Viena</li>
-                </ol>
-            </div> -->
+      <div>
+        <h2>
+          Las 10 <a href="#ciudades">ciudades</a> más bonitas del mundo que
+          deberías visitar al menos una vez en la vida
+        </h2>
+      </div>
 
-            <!-- LISTADO DE CIUDADES  -->
+      <!-- GRID -->
 
-            <div class="centrar-lista">
-                <ol id="ciudades">
-                    <li>Roma</li>
-                    <li>París</li>
-                    <li>Praga</li>
-                    <li>Londres</li>
-                    <li>Venecia</li>
-                    <li>Sidney</li>
-                    <li>Nueva York</li>
-                    <li>Barcelona</li>
-                    <li>Vancouver</li>
-                    <li>Viena</li>
-                </ol>
-            </div>
-    
-        </main>
+      <div class="ciudades-contenedor">
+        <div class="foto">
+          <img
+            src="../images/argentina-obelisco.jpg"
+            alt="Ciudad de Buenos Aires"
+          />
+        </div>
+        <div class="texto">
+          ¿Sabías que hay más de 500 ciudades con más de un millón de habitantes
+          en todo el mundo? Cada ciudad tiene su propio encanto y no es fácil
+          elegir cuál podría ser la más bonita. Pero diversas encuestas y
+          estudios han llegado a cierto consenso. La empresa de viajes Kuoni,
+          por ejemplo, ha evaluado las entradas de TripAdvisor y la firma Online
+          Mortgage Advisor ha hecho lo propio siguiendo su propio método. Los
+          analistas examinaron las ciudades según el principio de la proporción
+          áurea, que puede medirse con precisión y que la gente percibe como
+          especialmente armoniosa. La editorial de guías de viajes Rough Guide
+          lo hizo más fácil y simplemente hizo una encuesta a través de
+          Facebook. Una aportación igualmente interesante es la clasificación de
+          la Economist Intelligence Unit (EIU), que determina cuáles son las
+          ciudades más habitables del mundo. Nosotros hemos hecho un resumen de
+          todo ello y el resultado te sorprenderá.
+        </div>
+      </div>
 
+      <!-- LISTADO DE CIUDADES  -->
 
-        <footer>
-            <div class="zocalo">
-            <h3 class="mensaje-footer"><a href="contacto.html">¡Escríbenos y viajemos juntos!</a></h3>
-            </div>
-        </footer>
-    
-        <!-- Scrip suministrado por Bootstrap -->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossorigin="anonymous">
-            </script>
-        <!-- FIN Scrip suministrado por Bootstrap -->
-    </body>
+      <div class="centrar-lista">
+        <ol id="ciudades">
+          <li>Roma</li>
+          <li>París</li>
+          <li>Praga</li>
+          <li>Londres</li>
+          <li>Venecia</li>
+          <li>Sidney</li>
+          <li>Nueva York</li>
+          <li>Barcelona</li>
+          <li>Vancouver</li>
+          <li>Viena</li>
+        </ol>
+      </div>
+    </main>
+
+    <footer>
+      <div class="zocalo">
+        <h3 class="mensaje-footer">
+          <a href="contacto.html">¡Escríbenos y viajemos juntos!</a>
+        </h3>
+      </div>
+    </footer>
+
+    <!-- Scrip suministrado por Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FIN Scrip suministrado por Bootstrap -->
+  </body>
 </html>
