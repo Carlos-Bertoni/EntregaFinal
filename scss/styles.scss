@@ -51,39 +51,38 @@
     z-index: 1;
   }
   
+  /* MENU de NAVEGACION */
   .nav {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     margin: 0 auto;
+            
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 30px;
+      overflow: hidden;
+      align-items: center;
     
-  }
+      .nav-link a {
+        font-family: 'REM', sans-serif;
+        font-size: 0,5rem;
+        font-weight: 300;
+        color: rgb(45, 45, 254);
+        text-decoration: none;
+        list-style: none;
   
-  .nav-menu {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 30px;
-    overflow: hidden;
-  }
-  
-  .nav-link a {
-    font-family: 'REM', sans-serif;
-    font-size: 0,5rem;
-    font-weight: 300;
-    color: rgb(45, 45, 254);
-    text-decoration: none;
-    list-style: none;
-
         &:hover {
             color: rgb(27, 12, 125);
             font-weight: 700;
             transition: 0.5s;
         }
+      }
     }
+  }
 
 
-
-  
   .logo {
     height: 40px;
     margin-left: 40px;
@@ -94,6 +93,15 @@
     margin-top: 80px;
   }
   
+  .d-item {
+    height: 600px;
+  }
+
+  .d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0,6);
+  }
   
   #vinculo-externo {
     text-decoration: none;
