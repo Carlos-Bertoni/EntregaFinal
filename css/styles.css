@@ -85,10 +85,12 @@ main {
   margin-top: 80px;
 }
 
+/* ALTURA CAROUSEL */
 .d-item {
   height: 600px;
 }
 
+/* IMAGENES del SLIDE del CAROUSEL */
 .d-img {
   height: 100%;
   object-fit: cover;
