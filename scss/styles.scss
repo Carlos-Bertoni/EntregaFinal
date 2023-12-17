@@ -18,7 +18,10 @@
 
   /** IMPORTO ESTILOS MAIN **/
   @import "./components/main";
-  
+
+  /** IMPORTO COLORES **/
+  @import "./base/colores";
+
   /** Defino tipografías y tamaños **/
   
   h1 {
@@ -67,7 +70,7 @@
     text-decoration: none;
     font-family: 'REM', sans-serif;
     font-weight: 700;
-    color: rgb(9, 17, 133);
+    color:$color-corporativo;
     font-size: 1rem;
     text-align: center;
     background-color: rgba(80, 238, 255, 0.803);
@@ -130,7 +133,7 @@
   }
   
   .cards-container {
-    background-color: rgb(63, 55, 208);
+    background-color:$color-corporativo;
     display: flex;
     justify-content: space-around;
     gap: 1.0rem;
@@ -186,7 +189,7 @@
   
   .parrafo-centrado {
     display: flex;
-    align-items: center;
+    /** align-items: center **/;
     justify-content: center;
     padding: 1rem;
   }

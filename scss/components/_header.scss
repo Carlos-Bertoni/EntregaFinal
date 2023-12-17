@@ -1,5 +1,7 @@
+@import "../base/colores";
+
 .header {
-    background-color: rgb(194, 224, 250);
+    background-color: $color-menu;
     position: fixed;
     width: 100%;
     min-height: 80px;
@@ -25,7 +27,7 @@
                     font-family: 'REM', sans-serif;
                     font-size: 0, 5rem;
                     font-weight: 300;
-                    color: rgb(45, 45, 254);
+                    color: $color-corporativo;
                     text-decoration: none;
                     list-style: none;
     

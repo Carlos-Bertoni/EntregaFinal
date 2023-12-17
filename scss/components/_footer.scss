@@ -1,6 +1,8 @@
 /** FOOTER **/
+@import "../base/colores";
+
 .zocalo {
-    background-color: rgb(64, 207, 250);
+    background-color: $color-menu;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +19,8 @@
         a {
             text-decoration: none;    
             &:hover {
-                color: rgb(5, 5, 167);
+                color: $color-corporativo;
+                transition: 0.5s;
             }    
         }
     }
