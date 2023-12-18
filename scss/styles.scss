@@ -21,6 +21,13 @@
   /** IMPORTO MAPS **/
   @import "./base/maps";
 
+  /** IMPORTO EXTENDS **/
+  @import "./base/extends";
+  
+  /** IMPORTO MIXINS **/
+  @import "./base/mixins";
+
+
   /** Defino tipografías y tamaños **/
   
   h1 {
@@ -88,10 +95,7 @@
     @media only screen and (max-width: 320px) {
         margin-top: 278px;
         
-    
     }
-
-
 
   }
   
