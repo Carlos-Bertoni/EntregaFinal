@@ -30,6 +30,11 @@
   overflow: hidden;
   align-items: center;
 }
+@media only screen and (max-width: 320px) {
+  .header .nav .nav-menu {
+    display: block;
+  }
+}
 .header .nav .nav-menu .nav-link a {
   font-family: "REM", sans-serif;
   font-size: 0, 5rem;
@@ -140,6 +145,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 320px) {
+  .contenedor-hero-image {
+    margin-top: 278px;
+  }
 }
 
 /* Texto en el medio de la imagen de fondo */
