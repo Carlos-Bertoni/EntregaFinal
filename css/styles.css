@@ -139,7 +139,7 @@ p {
 /* Contenedor Imagen de Fondo y Título de cada página */
 .contenedor-hero-image {
   position: relative;
-  /*height: 100vh;*/
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,6 +191,7 @@ p {
   padding: 20px;
 }
 
+/** INICIO GRID PARA CARDS de CIUDADES **/
 .nombre-ciudad {
   text-align: center;
   font-size: 1rem;
@@ -199,15 +200,17 @@ p {
 }
 
 .ciudades-contenedor {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  justify-content: center;
   background-color: rgb(209, 222, 190);
   width: 100%;
-  /*max-width: 1200px;*/
-  /*height: 430px;*/
   padding: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .ciudades-contenedor .ciudades-card {
@@ -234,6 +237,7 @@ p {
   /*padding: 1rem;*/
 }
 .ciudades-contenedor .ciudades-card .descripcion-ciudad {
+  width: 100%;
   font-family: "REM", sans-serif;
   font-size: 0.8rem;
   font-weight: 300;
@@ -242,6 +246,7 @@ p {
   padding: 1rem;
 }
 
+/** FIN GRID PARA CARDS de CIUDADES **/
 .cards-container {
   background-color: rgb(21, 21, 207);
   display: flex;
