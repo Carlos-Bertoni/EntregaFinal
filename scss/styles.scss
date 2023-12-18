@@ -1,6 +1,417 @@
-footer{
+/** Defino estilos globales **/
 
-    p {
-        background-color: rgb(124, 168, 210);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /** IMPORTO ESTILOS HEADER **/
+  @import "./components/header";
+
+  /** IMPORTO ESTILOS FOOTER **/
+  @import "./components/footer";
+
+  /** IMPORTO ESTILOS MAIN **/
+  @import "./components/main";
+
+  /** IMPORTO COLORES **/
+  @import "./base/colores";
+
+  /** IMPORTO MAPS **/
+  @import "./base/maps";
+
+  /** Defino tipografías y tamaños **/
+  
+  h1 {
+    font-family: 'REM', sans-serif;
+    color: rgb(251, 251, 251);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+
+  }
+  
+  h2 {
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+  
+  }
+  
+  p {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  
+  /* ALTURA CAROUSEL */
+  .d-item {
+    height: 600px;
+  }
+
+  /* IMAGENES del SLIDE del CAROUSEL */
+  .d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0,6);
+  }
+  
+  #vinculo-externo {
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    color:$color-corporativo;
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgba(80, 238, 255, 0.803);
+    padding: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Contenedor Imagen de Fondo y Título de cada página */
+  .contenedor-hero-image {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Texto en el medio de la imagen de fondo */
+  .titulo-centrado {
+    font-family: 'REM', sans-serif;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Imagen de fondo */
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+  }
+  
+  /* Imágenes de cada sección */
+  .destacados {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 40%;
+    width: 45%;
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .maps {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  
+  /** INICIO FORMULARIO DE CONTACTO **/
+  .form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /** INICIO GRID PARA CARDS de CIUDADES **/
+  .nombre-ciudad {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(110, 109, 109);
+    margin-top: 50px;
+  }
+
+  .ciudades-contenedor {
+    background-color: rgb(209, 222, 190);
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    box-sizing: border-box;
+    justify-content: center;
+        
+  }
+  
+  .ciudades-contenedor .ciudades-card {
+    background-color: rgb(233, 238, 241);
+    width: 300px;
+    height: 480px;
+    border-radius: 8px;
+    border: 1px solid rgb(217, 215, 215);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: 200px;
     }
-}
+
+    .nombre-ciudad {
+      font-family: 'REM', sans-serif;
+      font-weight: 500;
+      color: rgb(0, 0, 0);
+      font-size: 1,5rem;
+      text-align: center;
+      /*padding: 1rem;*/
+    }
+
+    .descripcion-ciudad {
+      width: 100%;
+      font-family: 'REM', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 1rem;
+    }
+
+  }
+    /** FIN GRID PARA CARDS de CIUDADES **/
+
+  
+
+  .cards-container {
+    background-color:$color-corporativo;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.0rem;
+    align-items: center; /* Centrado vertical */
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .card-text {
+    text-align: left;
+  }
+  /* FIN Formulario de Contacto */
+  
+  #ciudades {
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+  }
+  
+  .ciudades-texto {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    background-color: rgb(205, 229, 237);
+    padding: 2rem;
+
+  }
+  
+  .foto img {
+    width: 70%;
+    padding: 2rem 2rem;
+    
+  }
+  
+  .texto {
+    text-align: left;
+    padding: 0rem 2rem;
+  }
+  
+  
+  .centrar-lista {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .centrar-lista ol {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .parrafo-centrado {
+    display: flex;
+    /** align-items: center **/;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .parrafo-justificado {
+    display: flex;
+    text-align: justify;
+    padding: 2rem;
+  }
+  
+  .parrafo-back {
+    background-color: rgb(223, 223, 240);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  /* Estilos del chat de WhatsApp */
+  .whatsapp-chat {
+    background-color: rgba(255, 240, 245, 0.7);
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Ajustando el tamaño del logo */
+    img {
+        width: 3rem; 
+        height: 3rem;
+    }
+  }
+  
+
+    .olas-container {
+      height: 300px;
+      background: linear-gradient(to top, rgb(81, 81, 250), rgb(255, 255, 255));
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: -1;
+    
+      .content {
+          font-family: Arial;
+          text-align: center;
+          font-size: 2em;
+          color: rgba(255, 255, 255, .8);
+        }
+        
+      .waves {
+        position: absolute;
+        /*left: 0;
+          right: 0;
+          height: 200px;
+          bottom: 0;*/
+          bottom: -72px;
+          height: 476px;
+          width: 100%;
+          overflow: hidden;
+      }
+    
+            .wave {
+              position: absolute;
+              left: -180px;
+              bottom: 0;
+              /*width: 200px;*/
+              /*height: 200px;*/
+              /*width: 100%;*/
+              /*border-radius: 50%;*/
+              /*background:rgba(0,0,0, .3);*/
+              width: 2402px;
+              height: 427px;
+              background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+              animation: 4s wave ease-in-out infinite alternate;
+            }
+      
+            .wave.a {
+              background-position: 0 -854px;
+            }
+      
+            .wave.b {
+              background-position: 0 -427px;
+              animation-delay: .6s;
+            }
+      
+            .wave.c {
+              background-position: 0 0;
+              animation-delay: 1.2s;
+            }
+      
+            /*.container {
+              position: absolute;
+            }*/
+            @keyframes wave {
+              0% {
+                transform: translate(0, 0);
+              }
+      
+              50% {
+                transform: translate(-80px, 30px);
+              }
+      
+              100% {
+                transform: translate(160px, -60px);
+              }
+            }
+    }
+
+  
+    .wave {
+      position: absolute;
+      left: -180px;
+      bottom: 0;
+      /*width: 200px;*/
+      /*height: 200px;*/
+      /*width: 100%;*/
+      /*border-radius: 50%;*/
+      /*background:rgba(0,0,0, .3);*/
+      width: 2402px;
+      height: 427px;
+      background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+    }
+  
+    .wave.a {
+      background-position: 0 -854px;
+    }
+  
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+    }
+  
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+    }
+  
+    /*.container {
+        position: absolute;
+      }*/
+    @keyframes wave {
+      0% {
+        transform: translate(0, 0);
+      }
+  
+      50% {
+        transform: translate(-80px, 30px);
+      }
+  
+      100% {
+        transform: translate(160px, -60px);
+      }
+    }
