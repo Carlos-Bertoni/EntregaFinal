@@ -1,0 +1,28 @@
+/** FOOTER **/
+@import "../base/colores";
+
+.zocalo {
+    background-color: $color-menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+
+    .mensaje-footer {
+        font-family: 'REM', sans-serif;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        text-align: center;
+        
+        a {
+            text-decoration: none;    
+            &:hover {
+                color: $color-corporativo;
+                transition: 0.5s;
+            }    
+        }
+    }
+    
+}
