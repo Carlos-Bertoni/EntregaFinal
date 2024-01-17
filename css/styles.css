@@ -236,6 +236,7 @@ p {
 }
 .ciudades-contenedor .ciudades-card:hover {
   transform: scale(1.08);
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);
   transition: 1s;
 }
 .ciudades-contenedor .ciudades-card img {
